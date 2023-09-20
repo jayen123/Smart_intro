@@ -8,11 +8,22 @@ $('.owl-carousel.products-carousel').owlCarousel({
         0:{
             items:1
         },
-        600:{
+        640:{
+            items:2
+        },
+        768:{
             items:3
         },
-        1000:{
+        1024:{
             items:4
         }
     }
 })
+
+let ac = document.querySelectorAll('.link');
+
+ac.forEach(element => {
+    element.addEventListener("click",function(){
+       element.classList.add("active");
+    })
+});
