@@ -23,4 +23,39 @@
     .btn-primary:hover{
         @apply bg-gradient-to-r from-lpink bg-lred
     }
+    /* products carousel nav buttons */
+    .owl-carousel.products-carousel .owl-nav{
+        @apply flex;
+    }
+    .owl-carousel.products-carousel .owl-nav > button:first-child{
+        @apply absolute -left-[3%] top-[35%]
+    }
+    .owl-carousel.products-carousel .owl-nav > button:last-child{
+        @apply absolute -right-[3%] top-[35%]
+    }
+
+    /* subscription-carousel nav buttons */
+    .owl-carousel.subscription-carousel .owl-nav{
+        @apply flex;
+    }
+    .owl-carousel.subscription-carousel .owl-nav > button:first-child{
+        @apply absolute -left-[4%] top-[46%]
+    }
+    .owl-carousel.subscription-carousel .owl-nav > button:last-child{
+        @apply absolute -right-[4%] top-[46%]
+    }
+    .owl-carousel.subscription-carousel .owl-item.active{
+        @apply bg-lgray rounded-md
+    }
+    .owl-carousel.subscription-carousel .owl-item.active.center{
+        @apply bg-gradient-to-r from-lred bg-lpink text-white
+ 
+    }
+    /* videos-carousel nav buttons */
+    .owl-carousel.videos .owl-nav > button:first-child{
+        @apply absolute -left-[4%] top-[46%]
+    }
+    .owl-carousel.videos .owl-nav > button:last-child{
+        @apply absolute -right-[4%] top-[46%]
+    }
 }
