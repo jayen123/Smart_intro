@@ -3,7 +3,7 @@ let largeMenuLink = document.querySelectorAll('.link');
 
 largeMenuLink.forEach(function (element, key) {
     element.addEventListener("click", () => {
-        element.classList.toggle("active")
+        element.classList.toggle("active");
 
         largeMenuLink.forEach(function (element2, key2) {
             if (key !== key2) {
@@ -71,10 +71,32 @@ $('.owl-carousel.videos').owlCarousel({
         640: {
             items: 2
         },
-        1024:{
-            items : 2
+        1024: {
+            items: 2
         }
     }
+})
+
+
+
+// home Faq Section
+let accordion = document.querySelectorAll('.accordion');
+
+
+// accordion.addEventListener("click", function () {
+//     accordion.classList.toggle('active');
+// });
+
+accordion.forEach(function(elem,index){
+    elem.addEventListener('click',function(){
+        elem.classList.toggle('active');
+
+        accordion.forEach(function(elem2,index2){
+            if (index !== index2) {
+                elem2.classList.remove('active');
+            }
+        });
+    });
 })
 
 
