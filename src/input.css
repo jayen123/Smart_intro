@@ -18,10 +18,10 @@
         @apply rotate-90
     }
     .btn-primary{
-        @apply inline-block bg-gradient-to-r from-lred bg-lpink py-[10px] px-7 text-white font-bold font-mont uppercase rounded-[5px] duration-1000   
+        @apply inline-block bg-gradient-to-b from-lred bg-lpink py-[10px] px-7 text-white font-bold font-mont uppercase rounded-[5px] duration-1000   
     }
     .btn-primary:hover{
-        @apply bg-gradient-to-r from-lpink bg-lred
+        @apply bg-gradient-to-b from-lpink bg-lred
     }
     /* products carousel nav buttons */
     .owl-carousel.products-carousel .owl-nav{
@@ -48,7 +48,7 @@
         @apply bg-lgray rounded-md
     }
     .owl-carousel.subscription-carousel .owl-item.active.center{
-        @apply bg-gradient-to-r from-lred bg-lpink text-white
+        @apply bg-gradient-to-b from-lred bg-lpink text-white
  
     }
     /* videos-carousel nav buttons */
@@ -67,5 +67,23 @@
     }
     .accordion.active > .accordion-body > p{
         @apply h-[150px]
+    }
+    .footer-icon{
+        @apply px-[10px] py-[8px] rounded-none text-white text-2xl border-2 border-white bg-opacity-0 hover:bg-gradient-to-b from-lred bg-lpink hover:bg-opacity-100 hover:border-transparent
+    }
+    .footer-link{
+        @apply inline-flex items-center gap-2 text-white text-lg font-medium font-mont uppercase transition-all duration-300 hover:text-lred
+    }
+    .footer-arrow{
+        @apply group-hover:rotate-90
+    }
+    .footer-input{
+        @apply font-mont text-white border-b border-white outline-none bg-transparent pb-2
+    }
+    .footer-input::placeholder{
+        @apply font-mont uppercase text-xs
+    }
+    .secondary-btn{
+        @apply bg-white font-mont font-bold text-[14px] text-dblack py-3 px-4 rounded-md cursor-pointer
     }
 }
