@@ -16,15 +16,18 @@ largeMenuLink.forEach(function (element, key) {
 // phone menu toggle
 let phoneBtn = document.getElementById('phone_menu_btn');
 let phoneMenu = document.getElementById('phone_menu');
-let currentIcon = document.querySelector('#phone_menu_btn > .iconify');
-let menuIcon = '<span class="iconify" data-icon="line-md:menu"></span>';
-let closeIcon = '<span class="iconify" data-icon="line-md:menu-to-close-transition"></span>';
+let menuIcon = document.getElementById('menu-icon');
 
 phoneBtn.addEventListener('click',function(){
-    if (phoneBtn.innerHTML == '<span class="iconify" data-icon="line-md:menu"></span>') {
-            phoneBtn.innerHTML = '<span class="iconify" data-icon="line-md:menu-to-close-transition"></span>'
+    const currentIcon = menuIcon.getAttribute('data-icon');
+
+    if (currentIcon === "nimbus:menu") {
+        menuIcon.setAttribute("data-icon", "nimbus:close");
+    }else{
+        menuIcon.setAttribute("data-icon", "nimbus:menu");
     }
-})
+});
+ 
 // products carousel
 $('.owl-carousel.products-carousel').owlCarousel({
     loop: true,

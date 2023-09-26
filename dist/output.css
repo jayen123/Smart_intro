@@ -1196,11 +1196,6 @@ video {
   line-height: 2.25rem;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
@@ -1259,6 +1254,10 @@ video {
 
 .uppercase{
   text-transform: uppercase;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 
 .tracking-wider{
@@ -1370,6 +1369,14 @@ video {
 }
 
 @media (min-width: 640px){
+  .sm\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
+
+  .sm\:h-\[700px\]{
+    height: 700px;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1380,9 +1387,26 @@ video {
     display: flex;
   }
 
+  .md\:aspect-auto{
+    aspect-ratio: auto;
+  }
+
+  .md\:h-\[700px\]{
+    height: 700px;
+  }
+
   .md\:py-5{
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:tracking-widest{
+    letter-spacing: 0.1em;
   }
 }
 
@@ -1397,5 +1421,11 @@ video {
 
   .lg\:grid-cols-4{
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:aspect-square{
+    aspect-ratio: 1 / 1;
   }
 }
