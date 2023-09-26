@@ -11,16 +11,16 @@
 </head>
 <body>
     <!-- Header Section Start Here -->
-    <section class="bg-dblack py-5">
+    <section class="bg-lblack">
         <div class="container">
-            <nav class="flex items-center justify-between">
-                <div>
+            <nav class="flex items-center justify-between px-5 py-3 md:py-5">
+                <div class="max-w-[100px]">
                     <a href="/src/pages/index.html">
                         <img src="/src/assets/images/logo.png" alt="logo">
                     </a>
                 </div>
                 <div class="flex items-center gap-[140px]">
-                    <div>
+                    <div class="hidden md:flex">
                         <ul class="flex gap-10">
                             <li><a class="link group" href="#">Home <span class="iconify arrow"  data-icon="bxs:right-arrow"></span></a></li>
                             <li><a class="link group" href="#">Cards <span class="iconify arrow"  data-icon="bxs:right-arrow"></span></a></li>
@@ -30,7 +30,21 @@
                         </ul>
                     </div>
                     <div>
-                        <a class="btn-primary" href="#">Login</a>
+                        <!-- <a class="btn-primary" href="#">Login</a> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <button id="phone_menu_btn" class="flex">
+                        <span class="iconify text-white text-2xl" data-icon="line-md:menu"></span>
+                    </button>
+                    <div id="phone_menu" class="hidden absolute top-[165%] right-0 bg-dblack font-mont uppercase text-[14px] font-semibold text-white w-40 px-5 py-3 rounded-md transition-all ease-in-out duration-500">
+                        <ul class="flex flex-col gap-[10px]">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Cards</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
                 </div>
             </nav>

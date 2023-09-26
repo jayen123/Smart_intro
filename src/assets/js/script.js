@@ -13,6 +13,18 @@ largeMenuLink.forEach(function (element, key) {
         });
     })
 });
+// phone menu toggle
+let phoneBtn = document.getElementById('phone_menu_btn');
+let phoneMenu = document.getElementById('phone_menu');
+let currentIcon = document.querySelector('#phone_menu_btn > .iconify');
+let menuIcon = '<span class="iconify" data-icon="line-md:menu"></span>';
+let closeIcon = '<span class="iconify" data-icon="line-md:menu-to-close-transition"></span>';
+
+phoneBtn.addEventListener('click',function(){
+    if (phoneBtn.innerHTML == '<span class="iconify" data-icon="line-md:menu"></span>') {
+            phoneBtn.innerHTML = '<span class="iconify" data-icon="line-md:menu-to-close-transition"></span>'
+    }
+})
 // products carousel
 $('.owl-carousel.products-carousel').owlCarousel({
     loop: true,
