@@ -14,17 +14,18 @@ largeMenuLink.forEach(function (element, key) {
     })
 });
 // phone menu toggle
-let phoneBtn = document.getElementById('phone_menu_btn');
 let phoneMenu = document.getElementById('phone_menu');
-let menuIcon = document.getElementById('menu-icon');
-
+let phoneBtn = document.querySelector('#phone_menu_btn');
+let menuIcon = phoneBtn.querySelector('.berger_menu');
 phoneBtn.addEventListener('click',function(){
-    const currentIcon = menuIcon.getAttribute('data-icon');
-
-    if (currentIcon === "nimbus:menu") {
-        menuIcon.setAttribute("data-icon", "nimbus:close");
+    phoneMenu.classList.toggle('hidden');
+    const currentIcon = menuIcon.getAttribute("data-icon");
+    if (currentIcon === "ooui:menu") {
+        menuIcon.setAttribute('data-icon','ooui:close');
+        console.log(menuIcon)
     }else{
-        menuIcon.setAttribute("data-icon", "nimbus:menu");
+        menuIcon.setAttribute('data-icon','ooui:menu')
+        console.log(menuIcon)
     }
 });
  
