@@ -18,10 +18,13 @@
         @apply rotate-90
     }
     .btn-primary{
-        @apply  bg-gradient-to-b from-lred bg-lpink py-[10px] px-4 text-[10px] text-white font-bold font-mont uppercase rounded-[5px] duration-1000 sm:text-[14px] sm:py-3 sm:px-5 md:py-3 md:px-6 md:text-lg
+        @apply inline-block bg-gradient-to-b from-lred bg-lpink py-[10px] px-4 text-[10px] text-white font-bold font-mont uppercase rounded-[5px] duration-1000 sm:text-[14px] sm:py-3 sm:px-5 md:py-3 md:px-6 md:text-lg
     }
     .btn-primary:hover{
         @apply bg-gradient-to-b from-lpink bg-lred
+    }
+    #toggle_menu li{
+        @apply py-2
     }
     /* products carousel nav buttons */
     .owl-carousel.products-carousel .owl-nav{

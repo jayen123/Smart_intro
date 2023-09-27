@@ -14,19 +14,22 @@ largeMenuLink.forEach(function (element, key) {
     })
 });
 // phone menu toggle
-let phoneBtn = document.getElementById('phone_menu_btn');
-let phoneMenu = document.getElementById('phone_menu');
-let menuIcon = document.getElementById('menu-icon');
+let toggleBtn = $('#phone_menu_btn');
+let toggleMenu = $('#toggle_menu');
+let menu = '<span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>';
+let closeMenu = '<span class="iconify" data-icon="line-md:menu-to-close-alt-transition"></span>'
 
-phoneBtn.addEventListener('click',function(){
-    const currentIcon = menuIcon.getAttribute('data-icon');
 
-    if (currentIcon === "nimbus:menu") {
-        menuIcon.setAttribute("data-icon", "nimbus:close");
+toggleBtn.on('click', () => {
+    const dataIcon = toggleBtn.find('.iconify').data('icon');
+    toggleMenu.stop().slideToggle('slow');
+    if (dataIcon === "line-md:close-to-menu-alt-transition") {
+        toggleBtn.html(closeMenu);
     }else{
-        menuIcon.setAttribute("data-icon", "nimbus:menu");
+        toggleBtn.html(menu);
     }
-});
+})
+
  
 // products carousel
 $('.owl-carousel.products-carousel').owlCarousel({
