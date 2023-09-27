@@ -14,6 +14,7 @@ largeMenuLink.forEach(function (element, key) {
     })
 });
 // phone menu toggle
+<<<<<<< HEAD
 let toggleBtn = $('#phone_menu_btn');
 let toggleMenu = $('#toggle_menu');
 let menu = '<span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>';
@@ -27,6 +28,20 @@ toggleBtn.on('click', () => {
         toggleBtn.html(closeMenu);
     }else{
         toggleBtn.html(menu);
+=======
+let phoneMenu = document.getElementById('phone_menu');
+let phoneBtn = document.querySelector('#phone_menu_btn');
+let menuIcon = phoneBtn.querySelector('.berger_menu');
+phoneBtn.addEventListener('click',function(){
+    phoneMenu.classList.toggle('hidden');
+    const currentIcon = menuIcon.getAttribute("data-icon");
+    if (currentIcon === "ooui:menu") {
+        menuIcon.setAttribute('data-icon','ooui:close');
+        console.log(menuIcon)
+    }else{
+        menuIcon.setAttribute('data-icon','ooui:menu')
+        console.log(menuIcon)
+>>>>>>> 17f81c900c492bac703e55a69017023c5a323744
     }
 })
 
