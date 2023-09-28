@@ -36,6 +36,7 @@ $('.owl-carousel.products-carousel').owlCarousel({
     loop: true,
     margin: 20,
     nav: true,
+    dots : false,
     navText: ['<img src="/src/assets/images/left-arrow.svg" alt="">', '<img src="/src/assets/images/right-arrow.svg" alt="">'],
     responsive: {
         0: {
@@ -58,6 +59,7 @@ $('.owl-carousel.subscription-carousel').owlCarousel({
     loop: true,
     margin: 20,
     nav: true,
+    dots : false,
     center: true,
     navText: ['<img src="/src/assets/images/left-arrow.svg" alt="">', '<img src="/src/assets/images/right-arrow.svg" alt="">'],
     responsive: {
