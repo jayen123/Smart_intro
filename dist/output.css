@@ -960,6 +960,10 @@ video {
   height: 0px;
 }
 
+.h-\[700px\]{
+  height: 700px;
+}
+
 .h-full{
   height: 100%;
 }
@@ -974,10 +978,6 @@ video {
 
 .h-8{
   height: 2rem;
-}
-
-.h-\[700px\]{
-  height: 700px;
 }
 
 .w-full{
