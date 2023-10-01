@@ -4,89 +4,112 @@
 @tailwind utilities;
 
 
-@layer components{
-    .link{
+@layer components {
+    .link {
         @apply relative text-white text-[14px] font-medium font-mont uppercase duration-300 hover:text-lred
     }
-    .arrow{
+
+    .arrow {
         @apply absolute -top-2 left-full group-hover:rotate-90
     }
-    .link.active{
+
+    .link.active {
         @apply text-lred
     }
-    .link.active .iconify{
+
+    .link.active .iconify {
         @apply rotate-90
     }
-    .btn-primary{
+
+    .btn-primary {
         @apply inline-block bg-gradient-to-b from-lred bg-lpink py-[10px] px-4 text-[10px] text-white font-bold font-mont uppercase rounded-[5px] duration-1000 sm:text-[14px] sm:py-3 sm:px-5 md:py-3 md:px-6 md:text-lg
     }
-    .btn-primary:hover{
+
+    .btn-primary:hover {
         @apply bg-gradient-to-b from-lpink bg-lred
     }
-    #toggle_menu li{
+
+    #toggle_menu li {
         @apply py-2
     }
+
     /* products carousel nav buttons */
-    .owl-carousel.products-carousel .owl-nav{
+    .owl-carousel.products-carousel .owl-nav {
         @apply flex;
     }
-    .owl-carousel.products-carousel .owl-nav > button:first-child{
+
+    .owl-carousel.products-carousel .owl-nav>button:first-child {
         @apply absolute -left-[3%] top-[35%]
     }
-    .owl-carousel.products-carousel .owl-nav > button:last-child{
+
+    .owl-carousel.products-carousel .owl-nav>button:last-child {
         @apply absolute -right-[3%] top-[35%]
     }
 
     /* subscription-carousel nav buttons */
-    .owl-carousel.subscription-carousel .owl-nav{
+    .owl-carousel.subscription-carousel .owl-nav {
         @apply flex;
     }
-    .owl-carousel.subscription-carousel .owl-nav > button:first-child{
+
+    .owl-carousel.subscription-carousel .owl-nav>button:first-child {
         @apply absolute -left-[4%] top-[46%]
     }
-    .owl-carousel.subscription-carousel .owl-nav > button:last-child{
+
+    .owl-carousel.subscription-carousel .owl-nav>button:last-child {
         @apply absolute -right-[4%] top-[46%]
     }
-    .owl-carousel.subscription-carousel .owl-item.active{
+
+    .owl-carousel.subscription-carousel .owl-item.active {
         @apply bg-lgray rounded-md transition-[background] ease-in duration-500
     }
-    .owl-carousel.subscription-carousel .owl-item.active.center{
+
+    .owl-carousel.subscription-carousel .owl-item.active.center {
         @apply bg-gradient-to-b from-lred bg-lpink text-white
- 
     }
+
     /* videos-carousel nav buttons */
-    .owl-carousel.videos .owl-nav > button:first-child{
-        @apply absolute -left-[4%] top-[46%]
+    .owl-carousel.videos .owl-nav>button:first-child {
+        @apply absolute -left-[0%] top-[35%] md:-left-[4%]
     }
-    .owl-carousel.videos .owl-nav > button:last-child{
-        @apply absolute -right-[4%] top-[46%]
+
+    .owl-carousel.videos .owl-nav>button:last-child {
+        @apply absolute -right-[0%] top-[35%] md:-right-[4%]
     }
+
     /* accordion */
-    .accordion > .accordion-heading > span{
+    .accordion>.accordion-heading>span {
         @apply after:content-['+'] after:absolute after:right-0 after:top-[50%] after:translate-y-[-50%] after:text-3xl after:text-lred
     }
-    .accordion.active > .accordion-heading > span{
+
+    .accordion.active>.accordion-heading>span {
         @apply after:content-['-'] after:text-5xl
     }
-    .accordion.active > .accordion-body > p{
+
+    .accordion.active>.accordion-body>p {
         @apply h-[150px]
     }
-    .footer-icon{
+
+    .footer-icon {
         @apply px-[10px] py-[8px] rounded-none text-white text-2xl border-2 border-white bg-opacity-0 hover:bg-gradient-to-b from-lred bg-lpink hover:bg-opacity-100 hover:border-transparent
     }
-    .footer-link{
-        @apply inline-flex items-center gap-2 text-white text-lg font-medium font-mont uppercase transition-all duration-300 hover:text-lred
+
+    .footer-link {
+        @apply inline-flex items-center gap-2 text-white text-sm font-medium font-mont uppercase transition-all duration-300 hover:text-lred md:text-lg
     }
-    .footer-arrow{
+
+    .footer-arrow {
         @apply group-hover:rotate-90
     }
-    .footer-input{
+
+    .footer-input {
         @apply font-mont text-white border-b border-white outline-none bg-transparent pb-2
     }
-    .footer-input::placeholder{
+
+    .footer-input::placeholder {
         @apply font-mont uppercase text-xs
     }
-    .secondary-btn{
-        @apply bg-white font-mont font-bold text-[14px] text-dblack py-3 px-4 rounded-md cursor-pointer
+
+    .secondary-btn {
+        @apply block bg-white font-mont font-bold text-[14px] text-dblack py-3 px-4 rounded-md cursor-pointer
     }
 }
