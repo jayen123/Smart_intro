@@ -69,7 +69,7 @@
         @apply after:content-['-'] after:text-5xl
     }
     .accordion.active > .accordion-body > p{
-        @apply max-h-[150px] h-[100px]
+        @apply h-[150px]
     }
     .footer-icon{
         @apply px-[10px] py-[8px] rounded-none text-white text-2xl border-2 border-white bg-opacity-0 hover:bg-gradient-to-b from-lred bg-lpink hover:bg-opacity-100 hover:border-transparent
