@@ -23,11 +23,11 @@
                 <div class="flex items-center gap-20">
                     <div>
                         <ul class="hidden md:flex gap-3">
-                            <li><a class="link" href="#">Home</a></li>
-                            <li><a class="link" href="#">Cards</a></li>
-                            <li><a class="link" href="#">Features</a></li>
-                            <li><a class="link" href="#">FAQs</a></li>
-                            <li><a class="link" href="/src/pages/index.html">Contact Us</a></li>
+                            <li><a class="link group" href="/src/pages/index.html">Home <span class="iconify arrow"  data-icon="bxs:right-arrow"></span> </a></li>
+                            <li><a class="link group" href="#">Cards <span class="iconify arrow"  data-icon="bxs:right-arrow"></span> </a></li>
+                            <li><a class="link group" href="#">Features <span class="iconify arrow"  data-icon="bxs:right-arrow"></span> </a></li>
+                            <li><a class="link group" href="#">FAQs <span class="iconify arrow"  data-icon="bxs:right-arrow"></span> </a></li>
+                            <li><a class="active link group" href="/src/pages/contact.html">Contact Us <span class="iconify arrow"  data-icon="bxs:right-arrow"></span> </a></li>
                         </ul>
                     </div>
                     <div class="hidden md:flex">
@@ -38,11 +38,11 @@
                             <span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>
                         </button>
                         <ul class="hidden w-full p-5  absolute top-full right-0 bg-dblack" id="toggle_menu">
-                            <li><a class="link" href="#">Home</a></li>
+                            <li><a class="link" href="/src/pages/index.html">Home</a></li>
                             <li><a class="link" href="#">Cards</a></li>
                             <li><a class="link" href="#">Features</a></li>
                             <li><a class="link" href="#">FAQs</a></li>
-                            <li><a class="link" href="/src/pages/index.html">Contact Us</a></li>
+                            <li><a class="link" href="/src/pages/contact.html">Contact Us</a></li>
                             <li><a class="btn-primary block text-center" href="#">Login</a></li>
                         </ul>
                     </div>
@@ -51,6 +51,82 @@
         </div>
     </section>
     <!-- Header Section End Here -->
+
+    <!-- Hero Section Start Here -->
+    <section class="bg-dblack py-[50px] md:py-[100px]">
+        <div class="container">
+            <div class="row">
+                <h1 class="bg-gradient-to-b from-lred bg-lpink bg-clip-text text-transparent text-2xl font-bold text-center md:text-[40px]">CONTACT US</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section ENd Here -->
+
+    <!-- Form Section Start Here -->
+    <section class="bg-lblack py-[50px]">
+        <div class="container">
+            <div class="row">
+                <div class="font-mont font-bold text-center capitalize">
+                    <p class="text-sm md:text-base text-lred">CONTACT NOW</p>
+                    <h2 class="text-base md:text-3xl text-white">Get In Touch With Us</h2>
+                </div>
+                <div class="py-[50px]">
+                    <form action="#" class="px-[10px] md:px-0">
+                        <div class="grid grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
+                                <label class="contact-label" for="name">Name</label>
+                                <input class="contact-input" type="text" name="name" id="name">
+                            </div>
+                            <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
+                                <label class="contact-label" for="email">Email Address</label>
+                                <input class="contact-input" type="email" name="email" id="email">
+                            </div>
+                            <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
+                                <label class="contact-label" for="subject">Subject</label>
+                                <input class="contact-input" type="text" name="subject" id="subject">
+                            </div>
+                            <div class="flex flex-col gap-1 col-span-2 md:col-span-1">
+                                <label class="contact-label" for="Phone">Phone</label>
+                                <input class="contact-input" type="text" name="Phone" id="Phone">
+                            </div>
+                            <div class="flex flex-col gap-1 col-span-2">
+                                <label class="contact-label" for="messege">Message</label>
+                                <textarea class="contact-input resize-none" name="messege" id="messege" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="flex flex-col col-span-2">
+                                <input class="btn-primary" type="submit" value="SEND MESSAGE">
+                            </div>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form Section End Here -->
+
+    <!-- Contact Section Start Here -->
+    <section class="py-[50px]">
+        <div class="container">
+            <div class="row">
+                <div class="grid grid-cols-1 gap-5 px-[10px] md:px-0 md:grid-cols-3">
+                    <div class="flex flex-col justify-center items-center gap-5 bg-lgray p-5 rounded-md aspect-square font-mont font-bold text-lblack">
+                        <span class="iconify text-4xl md:text-6xl" data-icon="material-symbols:mail-outline"></span>
+                        <span class="text-sm md:text-[22px]">smartintro2022@gmail.com</span>
+                    </div>
+                    <div class="bg-gradient-to-b from-lred bg-lpink flex flex-col justify-center items-center gap-5 p-5 rounded-md aspect-square font-mont font-bold text-white">
+                        <span class="iconify text-4xl md:text-6xl" data-icon="uiw:mobile"></span>
+                        <span class="text-sm md:text-[22px]">+8801327-159115</span>
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-5 bg-lgray p-5 rounded-md aspect-square font-mont font-bold text-lblack">
+                        <span class="iconify text-4xl md:text-6xl" data-icon="pajamas:location"></span>
+                        <span class="text-sm md:text-[22px]">Khulna,
+                            Bangladesh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End Here -->
 
     <!-- Footer Section Start Here -->
     <section class="bg-lblack px-[10px] md:px-0 py-[50px]">
