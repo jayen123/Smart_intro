@@ -53,33 +53,44 @@
     <!-- Header Section End Here -->
 
     <!-- Single Card Section Start Here  -->
-    <section>
+    <section class="py-[50px]">
         <div class="container">
-            <div class="row">
+            <div class="row grid gap-5">
                 <div class="flex items-center gap-2 uppercase font-mont font-bold">
                     <h5 class="text-xs">CaTEGORY</h5>
                     <span class="iconify" data-icon="ep:arrow-down"></span>
                 </div>
-                <div class="grid md:grid-cols-2">
-                    <div class="bg-[url('/src/assets/images/singleProducts.png')] bg-no-repeat bg-cover bg-center"></div>
-                    <div>
+                <div class="grid items-center gap-5 px-[10px] md:px-0 md:grid-cols-2">
+                    <div class="bg-[url('/src/assets/images/singleProducts.png')] bg-no-repeat aspect-square"></div>
+                    <div class="flex flex-col gap-10">
                         <div class="font-mont text-dblack">
                             <h5 class="text-xs font-bold tracking-widest">CATEGORY: <span class="text-lred">CLASSIC</span></h5>
-                            <h1 class="text-[40px] font-semibold">Black Card</h1>
+                            <h1 class="font-semibold md:text-[40px] ">Black Card</h1>
                         </div>
-                        <div class="font-mont">
-                            <button class="tabBtn active" data-tab="tab1">About</button>
-                            <button class="tabBtn" data-tab="tab2">Specification</button>
+                        <div class="flex flex-col gap-5">
+                            <div class="font-mont flex gap-[10px]">
+                                <button class="tabBtn active" data-tab="tab1">About</button>
+                                <button class="tabBtn" data-tab="tab2">Specification</button>
+                            </div>
+                            <div class="font-mont text-lblack text-sm">
+                                <p id="tab1" class="tab_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> <br>
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                                <p id="tab2" class="tab_content hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> <br>
+                                    It has survived not only five centuries, typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                </p>
+                            </div>
                         </div>
-                        <div>
-                            <p id="tab1" class="tab_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-
-                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                <p id="tab2" class="tab_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div class="font-mont">
-                            <span>$ 1800 <span>$ 2500</span> </span>
-                            <a class="btn-primary" href="#">ADD TO CART</a>
+                        <div class="grid gap-4">
+                            <div class="font-mont">
+                                <span class="text-dblack font-bold md:text-[30px]">$ 1800</span>
+                                <span class="text-lred font-light line-through md:text-lg">$ 2500</span>
+                            </div>
+                            <div>
+                                <a class="btn-primary" href="#">ADD TO CART</a>
+                            </div>
                         </div>
                     </div>
                 </div>

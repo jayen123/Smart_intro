@@ -947,6 +947,10 @@ video {
   --tw-ring-color: rgb(206 212 218 / var(--tw-ring-opacity));
 }
 
+.tabBtn{
+  font-family: Montserrat, sans-serif;
+}
+
 .tabBtn.active{
   font-weight: 600;
   text-decoration-line: underline;
@@ -1039,6 +1043,10 @@ video {
 
 .aspect-video{
   aspect-ratio: 16 / 9;
+}
+
+.aspect-auto{
+  aspect-ratio: auto;
 }
 
 .h-0{
@@ -1163,6 +1171,14 @@ video {
 
 .gap-\[50px\]{
   gap: 50px;
+}
+
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-4{
+  gap: 1rem;
 }
 
 .gap-x-5{
@@ -1651,6 +1667,10 @@ video {
 
   .md\:text-\[28px\]{
     font-size: 28px;
+  }
+
+  .md\:text-\[30px\]{
+    font-size: 30px;
   }
 
   .md\:text-\[40px\]{

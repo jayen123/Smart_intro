@@ -126,17 +126,22 @@ accordion.forEach(function (elem, index) {
 // single product tab
 
 let tabBtn = document.querySelectorAll(".tabBtn");
-let tabContent = document.querySelectorAll('.tab_content');
+let allContent = document.querySelectorAll(".tab_content");
 
 tabBtn.forEach(function (value, number) {
- 
+
     value.addEventListener("click", function () {
         value.classList.add("active");
-
         tabBtn.forEach(function (value2, number2) {
             if (number !== number2) {
                 value2.classList.remove("active");
             }
         });
+        let tabName = value.dataset.tab
+        let tabContent = document.getElementById(tabName)
+        for (let index = 0; index < allContent.length; index++) {
+            allContent[index].style.display = 'none';
+        }
+        tabContent.style.display = "block"
     });
 });

@@ -114,13 +114,19 @@
     }
 
     /* contact page input */
-    .contact-label{
+    .contact-label {
         @apply font-mont text-sm text-dgray md:text-xl
     }
+
     .contact-input {
         @apply w-full font-mont border py-2 px-2 text-lgray border-lgray outline-none bg-transparent rounded focus:ring-2 focus:ring-dgray
     }
-    .tabBtn.active{
+
+    .tabBtn {
+        @apply font-mont
+    }
+
+    .tabBtn.active {
         @apply font-semibold underline
     }
 }
