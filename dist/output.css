@@ -675,14 +675,26 @@ video {
 
 .owl-carousel.products-carousel .owl-nav>button:first-child{
   position: absolute;
-  left: -3%;
+  left: 0%;
   top: 35%;
+}
+
+@media (min-width: 768px){
+  .owl-carousel.products-carousel .owl-nav>button:first-child{
+    left: -4%;
+  }
 }
 
 .owl-carousel.products-carousel .owl-nav>button:last-child{
   position: absolute;
-  right: -3%;
+  right: 0%;
   top: 35%;
+}
+
+@media (min-width: 768px){
+  .owl-carousel.products-carousel .owl-nav>button:last-child{
+    right: -4%;
+  }
 }
 
 /* subscription-carousel nav buttons */
@@ -693,14 +705,26 @@ video {
 
 .owl-carousel.subscription-carousel .owl-nav>button:first-child{
   position: absolute;
-  left: -4%;
+  left: 0%;
   top: 46%;
+}
+
+@media (min-width: 768px){
+  .owl-carousel.subscription-carousel .owl-nav>button:first-child{
+    left: -4%;
+  }
 }
 
 .owl-carousel.subscription-carousel .owl-nav>button:last-child{
   position: absolute;
-  right: -4%;
+  right: 0%;
   top: 46%;
+}
+
+@media (min-width: 768px){
+  .owl-carousel.subscription-carousel .owl-nav>button:last-child{
+    right: -4%;
+  }
 }
 
 .owl-carousel.subscription-carousel .owl-item.active{
@@ -923,6 +947,11 @@ video {
   --tw-ring-color: rgb(206 212 218 / var(--tw-ring-opacity));
 }
 
+.tabBtn.active{
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
 .visible{
   visibility: visible;
 }
@@ -1036,10 +1065,6 @@ video {
   max-width: 770px;
 }
 
-.max-w-\[770\]{
-  max-width: 770;
-}
-
 .translate-x-\[-50\%\]{
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1128,16 +1153,16 @@ video {
   gap: 1.25rem;
 }
 
+.gap-6{
+  gap: 1.5rem;
+}
+
 .gap-\[10px\]{
   gap: 10px;
 }
 
 .gap-\[50px\]{
   gap: 50px;
-}
-
-.gap-6{
-  gap: 1.5rem;
 }
 
 .gap-x-5{
@@ -1213,6 +1238,10 @@ video {
 
 .bg-\[url\(\'\/src\/assets\/images\/red-card\.png\'\)\]{
   background-image: url('/src/assets/images/red-card.png');
+}
+
+.bg-\[url\(\'\/src\/assets\/images\/singleProducts\.png\'\)\]{
+  background-image: url('/src/assets/images/singleProducts.png');
 }
 
 .bg-\[url\(\'\/src\/assets\/images\/video-bg-1\.png\'\)\]{
@@ -1296,21 +1325,12 @@ video {
   padding-bottom: 50px;
 }
 
-.py-\[\]{
-  padding-top: ;
-  padding-bottom: ;
+.pb-\[50px\]{
+  padding-bottom: 50px;
 }
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pb-\[50px\]{
-  padding-bottom: 50px;
 }
 
 .text-center{
@@ -1342,6 +1362,10 @@ video {
 
 .text-\[22px\]{
   font-size: 22px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .text-base{

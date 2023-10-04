@@ -39,11 +39,11 @@
     }
 
     .owl-carousel.products-carousel .owl-nav>button:first-child {
-        @apply absolute -left-[3%] top-[35%]
+        @apply absolute left-[0%] top-[35%] md:-left-[4%]
     }
 
     .owl-carousel.products-carousel .owl-nav>button:last-child {
-        @apply absolute -right-[3%] top-[35%]
+        @apply absolute right-[0%] top-[35%] md:-right-[4%]
     }
 
     /* subscription-carousel nav buttons */
@@ -52,11 +52,11 @@
     }
 
     .owl-carousel.subscription-carousel .owl-nav>button:first-child {
-        @apply absolute -left-[4%] top-[46%]
+        @apply absolute left-[0%] top-[46%] md:-left-[4%]
     }
 
     .owl-carousel.subscription-carousel .owl-nav>button:last-child {
-        @apply absolute -right-[4%] top-[46%]
+        @apply absolute right-[0%] top-[46%] md:-right-[4%]
     }
 
     .owl-carousel.subscription-carousel .owl-item.active {
@@ -119,5 +119,8 @@
     }
     .contact-input {
         @apply w-full font-mont border py-2 px-2 text-lgray border-lgray outline-none bg-transparent rounded focus:ring-2 focus:ring-dgray
+    }
+    .tabBtn.active{
+        @apply font-semibold underline
     }
 }
