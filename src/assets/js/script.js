@@ -147,6 +147,15 @@ tabBtn.forEach(function (value, number) {
 });
 
 // password visible 
-
+let closeIcon = document.querySelector('#pass .iconify');
+console.log(closeIcon)
+let input = document.querySelector('#pass input');
+closeIcon.addEventListener('click',function(){
+    if (input.type === 'password') {
+        input.setAttribute('type','text');
+    }else{
+        input.setAttribute('type','password');
+    }
+});
 
 
