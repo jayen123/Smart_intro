@@ -145,3 +145,8 @@ tabBtn.forEach(function (value, number) {
         tabContent.style.display = "block"
     });
 });
+
+// password visible 
+
+
+
