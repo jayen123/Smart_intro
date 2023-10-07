@@ -1,4 +1,15 @@
 "use strict";
+
+let scrollProgress = document.querySelector('#progressBar');
+
+window.addEventListener('scroll',function(){
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrolled = (winScroll / height) * 100;
+    scrollProgress.style.width = scrolled + "%";
+})
+
+// nav menu
 let largeMenuLink = document.querySelectorAll(".link");
 
 largeMenuLink.forEach(function (element, key) {
@@ -27,10 +38,12 @@ toggleBtn.addEventListener('click', () => {
     let dataIcon = iconifyElement.getAttribute('data-icon');
     
     // Toggle the menu visibility 
-    if (window.getComputedStyle(toggleMenu).display === 'none') {
-        toggleMenu.style.display = 'block';
+    if (window.getComputedStyle(toggleMenu).position === 'absolute') {
+        toggleMenu.style.transform = "translate()";
+        toggleMenu.style.transition = "0.5s"
     } else {
-        toggleMenu.style.display = 'none';
+        toggleMenu.style.transform = "translate()";
+        toggleMenu.style.transition = "0.5s"
     }
 
     // Toggle the button icon

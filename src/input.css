@@ -86,7 +86,7 @@
     }
 
     .accordion.active > .accordion-body > p {
-        @apply h-[100px]
+        @apply h-[150px] md:h-[100px]
     }
 
     .footer-icon {
