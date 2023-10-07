@@ -75,16 +75,19 @@
                                 <label class="contact-label" for="phonenumber">Phone Number</label>
                                 <input class="contact-input" type="phonenumber" name="phonenumber" id="phonenumber">
                             </div>
-                            <div class="flex flex-col gap-1">
-                                <label class="contact-label" for="spassword">Password</label>
-                                <input class="contact-input" type="password" name="password" id="spassword">
+                            <div id="pass" class="flex flex-col gap-1 relative">
+                                <label class="contact-label" for="password">Password</label>
+                                <input class="contact-input" type="password" name="password" id="password">
+                                <div class="absolute right-2 top-[50%]  text-white text-2xl md:top-[55%]">
+                                    <span class="iconify" data-icon="el:eye-close"></span>
+                                </div>
                             </div>
                             <div class="flex flex-col gap-1">
                                 <label class="contact-label" for="cpass">Confirm Password</label>
                                 <input class="contact-input" type="password" name="cpass" id="cpass">
                             </div>
                             <div>
-                                <input type="checkbox" name="remember" id="remember">
+                                <input class="accent-lred" type="checkbox" name="remember" id="remember">
                                 <label class="contact-label" for="remember">I agree to the <a class="underline" href="/src/pages/terms&conditions.html">terms and conditions.</a></label>
                             </div>
                             <div class="flex flex-col">

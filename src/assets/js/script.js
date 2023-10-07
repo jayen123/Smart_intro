@@ -13,22 +13,34 @@ largeMenuLink.forEach(function (element, key) {
     });
 });
 // phone menu toggle
-let toggleBtn = $("#phone_menu_btn");
-let toggleMenu = $("#toggle_menu");
-let menu =
-    '<span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>';
-let closeMenu =
-    '<span class="iconify" data-icon="line-md:menu-to-close-alt-transition"></span>';
+// Get references to the button and menu elements
+let toggleBtn = document.getElementById('phone_menu_btn');
+let toggleMenu = document.getElementById('toggle_menu');
 
-toggleBtn.on("click", () => {
-    const dataIcon = toggleBtn.find(".iconify").data("icon");
-    toggleMenu.stop().slideToggle("slow");
-    if (dataIcon === "line-md:close-to-menu-alt-transition") {
-        toggleBtn.html(closeMenu);
+// Define HTML strings for menu icons
+let menuIcon = '<span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>';
+let closeMenuIcon = '<span class="iconify" data-icon="line-md:menu-to-close-alt-transition"></span>';
+
+// Add a click event listener to the button
+toggleBtn.addEventListener('click', () => {
+    let iconifyElement = toggleBtn.querySelector('.iconify');
+    let dataIcon = iconifyElement.getAttribute('data-icon');
+    
+    // Toggle the menu visibility 
+    if (window.getComputedStyle(toggleMenu).display === 'none') {
+        toggleMenu.style.display = 'block';
     } else {
-        toggleBtn.html(menu);
+        toggleMenu.style.display = 'none';
+    }
+
+    // Toggle the button icon
+    if (dataIcon === 'line-md:close-to-menu-alt-transition') {
+        toggleBtn.innerHTML = closeMenuIcon;
+    } else {
+        toggleBtn.innerHTML = menuIcon;
     }
 });
+
 
 // products carousel
 $(".owl-carousel.products-carousel").owlCarousel({
@@ -147,15 +159,28 @@ tabBtn.forEach(function (value, number) {
 });
 
 // password visible 
-let closeIcon = document.querySelector('#pass .iconify');
-console.log(closeIcon)
+let closeIcon = document.querySelector('#pass div');
 let input = document.querySelector('#pass input');
+
+// Define HTML strings for menu icons
+let openEye = '<span class="iconify" data-icon="el:eye-open"></span>';
+let closeEye = '<span class="iconify" data-icon="el:eye-close"></span>';
+// Add a click event listener to the closeEye
 closeIcon.addEventListener('click',function(){
+    let iconifyElement2 = closeIcon.querySelector('.iconify');
+    let dataIcon2 = iconifyElement2.getAttribute('data-icon');
+    // password toggle 
     if (input.type === 'password') {
         input.setAttribute('type','text');
     }else{
         input.setAttribute('type','password');
-    }
+    };
+    // icon toggle
+    if (dataIcon2 === "el:eye-close") {
+        closeIcon.innerHTML = openEye
+    }else{
+        closeIcon.innerHTML = closeEye
+    };
 });
 
 

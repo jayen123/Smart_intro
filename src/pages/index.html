@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="/dist/output.css">
     <title>Smart Intro</title>
 </head>
-<body>
+<body class="relative">
+        <a class="fixed  top-[90%] right-[2%]" href="#">
+            <img src="/src/assets/images/messenger.png" alt="messenger">
+        </a>
     <!-- Header Section Start Here -->
     <section class="bg-lblack">
         <div class="container relative">
@@ -36,7 +39,7 @@
                         <button class="text-white text-2xl" id="phone_menu_btn">
                             <span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>
                         </button>
-                        <ul class="hidden w-full p-5  absolute top-full right-0 bg-dblack" id="toggle_menu">
+                        <ul class="hidden w-full p-5  absolute top-full right-0 bg-dblack z-10" id="toggle_menu">
                             <li><a class="link" href="/src/pages/index.html">Home</a></li>
                             <li><a class="link" href="/src/pages/products.html">Cards</a></li>
                             <li><a class="link" href="#">Features</a></li>

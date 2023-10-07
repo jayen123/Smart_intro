@@ -77,16 +77,16 @@
     }
 
     /* accordion */
-    .accordion>.accordion-heading>span {
-        @apply after:content-['+'] after:absolute after:right-0 after:top-[50%] after:translate-y-[-50%] after:text-3xl after:text-lred
+    .accordion > .accordion-heading > span {
+        @apply after:content-['+'] after:text-3xl after:text-lred
     }
 
-    .accordion.active>.accordion-heading>span {
+    .accordion.active > .accordion-heading > span {
         @apply after:content-['-'] after:text-5xl
     }
 
-    .accordion.active>.accordion-body>p {
-        @apply h-[150px]
+    .accordion.active > .accordion-body > p {
+        @apply h-[100px]
     }
 
     .footer-icon {

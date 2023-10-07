@@ -37,7 +37,7 @@
                         <button class="text-white text-2xl" id="phone_menu_btn">
                             <span class="iconify" data-icon="line-md:close-to-menu-alt-transition"></span>
                         </button>
-                        <ul class="hidden w-full p-5  absolute top-full right-0 bg-dblack" id="toggle_menu">
+                        <ul class="hidden w-full p-5  absolute top-full right-0 bg-dblack z-10" id="toggle_menu">
                             <li><a class="link" href="/src/pages/index.html">Home</a></li>
                             <li><a class="link" href="/src/pages/products.html">Cards</a></li>
                             <li><a class="link" href="#">Features</a></li>
@@ -70,11 +70,13 @@
                             <div id="pass" class="flex flex-col gap-1 relative">
                                 <label class="contact-label" for="password">Password</label>
                                 <input class="contact-input" type="password" name="password" id="password">
-                                <span class="iconify absolute right-2 top-[55%]  text-white text-2xl" data-icon="el:eye-close"></span>
+                                <div class="absolute right-2 top-[50%]  text-white text-2xl md:top-[55%]">
+                                    <span class="iconify" data-icon="el:eye-close"></span>
+                                </div>
                             </div>
                             <div class="flex justify-between">
                                 <div>
-                                    <input type="checkbox" name="remember" id="remember">
+                                    <input class="accent-lred" type="checkbox" name="remember" id="remember">
                                     <label class="contact-label" for="remember">Remember Me</label>
                                 </div>
                                 <div>
