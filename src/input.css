@@ -5,6 +5,11 @@
 
 
 @layer components {
+    #crsr{
+        @apply bg-lred opacity-40 w-3 h-3 rounded-full absolute translate-x-[-50%] translate-y-[-50%] duration-150 mix-blend-difference;
+    }
+
+
     .link {
         @apply relative text-white text-[14px] font-medium font-mont uppercase duration-300 hover:text-lred
     }
