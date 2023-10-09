@@ -3,36 +3,26 @@
 
 // custome cursor
 let area = document.querySelector('body')
-console.log(area);
 let crsr = document.querySelector('#crsr')
 
 area.addEventListener("mousemove",function(e){
-
     crsr.style.left = e.clientX+"px"
     crsr.style.top = e.clientY+"px"
-
-    console.log(e.pageX, e.pageY)
-
-
-    
-    // function logKey(e) {
-    //     screenLog.innerText = `
-    //     Screen X/Y: ${e.screenX}, ${e.screenY}
-    //     Client X/Y: ${e.clientX}, ${e.clientY}`;
-    // }
-
 })
 
 
 // progressBar
 let scrollProgress = document.querySelector('#progressBar');
-
 window.addEventListener('scroll',function(){
+    scrollFunc();
+});
+const scrollFunc = function () {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     scrollProgress.style.width = scrolled + "%";
-});
+};
+
 // nav menu
 let largeMenuLink = document.querySelectorAll(".link");
 
@@ -58,19 +48,27 @@ let closeMenuIcon = '<span class="iconify" data-icon="line-md:menu-to-close-alt-
 
 // Add a click event listener to the button
 toggleBtn.addEventListener('click', () => {
+    
+    togglMenuChange();
+    phoneMenuSlide();
+   
+});
+
+const togglMenuChange = function () {
     let iconifyElement = toggleBtn.querySelector('.iconify');
     let dataIcon = iconifyElement.getAttribute('data-icon');
-    
-    toggleMenu.classList.toggle('right-full');
-    toggleMenu.classList.toggle('right-0');
 
-    // Toggle the button icon
     if (dataIcon === 'line-md:close-to-menu-alt-transition') {
         toggleBtn.innerHTML = closeMenuIcon;
     } else {
         toggleBtn.innerHTML = menuIcon;
     }
-});
+};
+
+const phoneMenuSlide = function () {
+    toggleMenu.classList.toggle('right-full');
+    toggleMenu.classList.toggle('right-0');
+}
 
 
 
@@ -199,20 +197,27 @@ let openEye = '<span class="iconify" data-icon="el:eye-open"></span>';
 let closeEye = '<span class="iconify" data-icon="el:eye-close"></span>';
 // Add a click event listener to the closeEye
 closeIcon.addEventListener('click',function(){
+    passwordIconToggle();
+    passwordTypeToggle();
+});
+
+const passwordIconToggle = function () {
     let iconifyElement2 = closeIcon.querySelector('.iconify');
     let dataIcon2 = iconifyElement2.getAttribute('data-icon');
-    // password toggle 
+
+      if (dataIcon2 === "el:eye-close") {
+        closeIcon.innerHTML = openEye
+    }else{
+        closeIcon.innerHTML = closeEye
+    };
+};
+
+const passwordTypeToggle = function () {
     if (input.type === 'password') {
         input.setAttribute('type','text');
     }else{
         input.setAttribute('type','password');
     };
-    // icon toggle
-    if (dataIcon2 === "el:eye-close") {
-        closeIcon.innerHTML = openEye
-    }else{
-        closeIcon.innerHTML = closeEye
-    };
-});
+}
 
 
