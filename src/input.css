@@ -11,15 +11,11 @@
 
 
     .link {
-        @apply relative text-white text-[14px] font-medium font-mont uppercase duration-300 hover:text-lred
-    }
-
-    .arrow {
-        @apply absolute -top-2 left-full group-hover:rotate-90
+        @apply font-mont uppercase text-white text-lg font-medium relative  after:content-[''] after:absolute after:w-full after:h-[2px] after:origin-[right_top] after:transition-transform after:duration-[0.4s] after:ease-[cubic-bezier(0.74,0.72,0.27,0.24)] after:scale-x-0 after:scale-y-100 after:left-0 after:bottom-0 after:bg-lred  hover:after:origin-[left_top] hover:after:scale-100
     }
 
     .link.active {
-        @apply text-lred
+        @apply text-lred after:w-full after:h-[2px] after:scale-x-100
     }
 
     .link.active .iconify {
